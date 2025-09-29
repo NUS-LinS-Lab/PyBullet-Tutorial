@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<robot name="frame_marker">
+
+  <!-- Root -->
+  <link name="frame_root"/>
+
+  <!-- X axis (red) -->
+  <link name="x_axis">
+    <visual>
+      <origin xyz="0.5 0 0" rpy="0 1.5708 0 "/>
+      <geometry>
+        <cylinder radius="0.01" length="1.0"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.8 0.2 0.2 0.5"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="frame_x_joint" type="fixed">
+    <parent link="frame_root"/>
+    <child link="x_axis"/>
+  </joint>
+
+  <!-- Y axis (green) -->
+  <link name="y_axis">
+    <visual>
+      <origin xyz="0 0.5 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.01" length="1.0"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0.2 0.8 0.2 0.5"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="frame_y_joint" type="fixed">
+    <parent link="frame_root"/>
+    <child link="y_axis"/>
+  </joint>
+
+  <!-- Z axis (blue) -->
+  <link name="z_axis">
+    <visual>
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.01" length="1.0"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 0.8 0.5"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="frame_z_joint" type="fixed">
+    <parent link="frame_root"/>
+    <child link="z_axis"/>
+  </joint>
+
+</robot>

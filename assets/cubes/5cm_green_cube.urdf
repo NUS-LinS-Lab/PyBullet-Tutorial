@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="green_goal_cube">
+  <!-- Single root link with VISUAL only (no collision/inertial) -->
+  <link name="cube_viz">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 0.5"/>
+      </material>
+    </visual>
+  </link>
+</robot>
