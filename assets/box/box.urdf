@@ -1,14 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="box">
     <link name="boxLink">
-        <contact>
-            <lateral_friction value="1"/>
-        </contact>
-        <inertial>
-            <origin rpy="0 0 0" xyz="0 0 0"/>
-            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
-            <mass value="200"/>
-        </inertial>
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
@@ -24,6 +16,10 @@
                 <box size="0.5 0.5 0.5"/>
             </geometry>
         </collision>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <inertia ixx="0.000083" ixy="0" ixz="0" iyy="0.000083" iyz="0" izz="0.000083"/>
+            <mass value="0.2"/>
+        </inertial>
     </link>
 </robot>
-
