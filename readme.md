@@ -105,6 +105,6 @@ It covers basic simulation, loading robots, forward & inverse kinematics, contro
 ---
 
 
-# References
+## References
 - [PyBullet Quickstart Guide](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit?tab=t.0#heading=h.2ye70wns7io3).
 - [PyBullet Examples](https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet/examples). 
